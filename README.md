@@ -1,4 +1,4 @@
-# Welcome :tm:
+# Welcome <sup>:tm:</sup>
 
 Hi there! You can just call me **Evvy**. I'm an avid coder and a philomath - I simply love learning new things.\
 My journey started ages ago as I was traversing through some **HTML** code to setup my first website.\
