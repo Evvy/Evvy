@@ -47,5 +47,13 @@ if (true) then
 end
 ```
 </td>
+<td>
+    
+```ruby
+if (true)
+   -- Do something
+end
+```
+</td>
 </tr>
 </table>
