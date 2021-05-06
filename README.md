@@ -51,7 +51,7 @@ end
     
 ```ruby
 if (true)
-   -- Do something
+   # Do something
 end
 ```
 </td>
