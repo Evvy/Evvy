@@ -11,7 +11,7 @@ Looking forward I hope to dip my toes into some **Ruby** programming along with 
 
 <table>
 <tr>
-<td colspan="5""><center> Which one do you relate to? </center></td>
+<td colspan="5" style="text-align: center;">Which one do you relate to?</td>
 </tr>
 <tr>
 <td>
