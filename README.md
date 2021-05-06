@@ -9,6 +9,8 @@ Looking forward I hope to dip my toes into some **Ruby** programming along with 
 > **`A word of wisdom: Save yourself several sleepless nights by using those damned SEMICOLONS.`**
 > Thank me later!
 
+<br>
+
 <table>
 <tr>
 <td colspan="5" align="center">Which one do you relate to?</td>
