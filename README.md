@@ -13,7 +13,7 @@ Looking forward I hope to dip my toes into some **Ruby** programming along with 
 
 <table>
 <tr>
-<td colspan="5" align="center">Which one do you relate to?</td>
+<td colspan="5" align="center">**Which one do you relate to?**</td>
 </tr>
 <tr>
 <td>
