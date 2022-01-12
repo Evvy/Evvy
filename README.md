@@ -6,8 +6,6 @@ Soon thereafter I caught the eye of **`CSS`**, and got around to dropping some s
 Things escalated quickly over the years and I eventually picked up multiple interesting languages, such as: **`PHP`**, **`JavaScript`**, **`SQL`**, **`Lua`**, **`Python`**, **`Java`**, and a hint of **`C#`**.\
 Looking forward I hope to dip my toes into some **`Ruby`** programming along with some scripting.
 
-> **`A word of wisdom: Save yourself several sleepless nights by using those damned SEMICOLONS.`**
-> Thank me later!
 
 <br>
 
