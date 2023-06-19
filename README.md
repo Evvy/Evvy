@@ -57,5 +57,3 @@ end
 </td>
 </tr>
 </table>
-
-[x] Completed
