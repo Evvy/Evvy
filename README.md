@@ -58,4 +58,4 @@ end
 </tr>
 </table>
 
-- [x] Completed
+[x] Completed
