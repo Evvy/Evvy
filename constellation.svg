@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1280" height="360" viewBox="0 0 1280 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Constellation Compiler</title>
+  <desc id="desc">An animated SVG hero for a GitHub profile README. Constellation points connect into a flowing code-like network and reveal a title.</desc>
+
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="50%" stop-color="#09142A"/>
+      <stop offset="100%" stop-color="#050816"/>
+      <animate attributeName="x1" values="0;150;0" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="1280;1130;1280" dur="18s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <radialGradient id="glowA" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(260 110) rotate(30) scale(420 220)">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#7DD3FC" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowB" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(980 250) rotate(-15) scale(380 180)">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#C084FC" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="lineGrad" x1="120" y1="80" x2="1160" y2="280" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7DD3FC" stop-opacity="0.15"/>
+      <stop offset="45%" stop-color="#A78BFA" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#67E8F9" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="290" y1="95" x2="1010" y2="270" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E2E8F0"/>
+      <stop offset="50%" stop-color="#BAE6FD"/>
+      <stop offset="100%" stop-color="#DDD6FE"/>
+    </linearGradient>
+
+    <filter id="softGlow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="smallGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <clipPath id="wipe">
+      <rect x="287" y="103" width="0" height="82" rx="8">
+        <animate attributeName="width" values="0;0;530;530" keyTimes="0;0.18;0.72;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+
+    <mask id="scanMask">
+      <rect width="1280" height="360" fill="black"/>
+      <rect x="-260" y="0" width="220" height="360" fill="white" opacity="0.9">
+        <animate attributeName="x" values="-260;1320" dur="8.2s" repeatCount="indefinite"/>
+      </rect>
+    </mask>
+
+    <style>
+      .tiny { font: 500 13px 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace; letter-spacing: 0.16em; }
+      .label { font: 700 46px Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; letter-spacing: 0.1em; }
+      .sub { font: 500 17px Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; letter-spacing: 0.08em; }
+      .star { transform-box: fill-box; transform-origin: center; animation: pulse 4.5s ease-in-out infinite; }
+      .star.s2 { animation-delay: -1.1s; }
+      .star.s3 { animation-delay: -2.2s; }
+      .star.s4 { animation-delay: -3.4s; }
+      .floatA { animation: driftA 16s ease-in-out infinite; }
+      .floatB { animation: driftB 19s ease-in-out infinite; }
+      .floatC { animation: driftC 14s ease-in-out infinite; }
+      .dash {
+        stroke-dasharray: 10 16;
+        animation: moveDash 6s linear infinite;
+      }
+      .blink {
+        animation: blink 1.1s steps(1) infinite;
+      }
+      .reveal {
+        animation: titleGlow 9s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%,100% { transform: scale(0.9); opacity: 0.7; }
+        50% { transform: scale(1.35); opacity: 1; }
+      }
+      @keyframes driftA {
+        0%,100% { transform: translate(0px, 0px); }
+        50% { transform: translate(20px, -8px); }
+      }
+      @keyframes driftB {
+        0%,100% { transform: translate(0px, 0px); }
+        50% { transform: translate(-16px, 10px); }
+      }
+      @keyframes driftC {
+        0%,100% { transform: translate(0px, 0px); }
+        50% { transform: translate(10px, 12px); }
+      }
+      @keyframes moveDash {
+        to { stroke-dashoffset: -260; }
+      }
+      @keyframes blink {
+        0%,49% { opacity: 1; }
+        50%,100% { opacity: 0; }
+      }
+      @keyframes titleGlow {
+        0%,100% { opacity: 0.78; filter: none; }
+        50% { opacity: 1; filter: drop-shadow(0 0 12px rgba(125,211,252,.28)); }
+      }
+      @media (prefers-color-scheme: light) {
+        #bgRect { fill: #F8FAFC; }
+        .lightSwapA { fill: #E2E8F0 !important; }
+        .lightSwapB { fill: #0F172A !important; }
+        .lineLight { stroke-opacity: 0.28 !important; }
+      }
+    </style>
+  </defs>
+
+  <rect id="bgRect" width="1280" height="360" rx="24" fill="url(#bg)"/>
+  <rect width="1280" height="360" rx="24" fill="url(#glowA)" class="floatA"/>
+  <rect width="1280" height="360" rx="24" fill="url(#glowB)" class="floatB"/>
+
+  <!-- grid haze -->
+  <g opacity="0.13" class="floatC">
+    <path d="M0 60H1280M0 120H1280M0 180H1280M0 240H1280M0 300H1280" stroke="#94A3B8" stroke-width="1"/>
+    <path d="M160 0V360M320 0V360M480 0V360M640 0V360M800 0V360M960 0V360M1120 0V360" stroke="#94A3B8" stroke-width="1"/>
+  </g>
+
+  <!-- code nebula -->
+  <g opacity="0.7" mask="url(#scanMask)">
+    <text x="82" y="78" class="tiny lightSwapA" fill="#B6C2D0">init / profile.visual / lattice.render()</text>
+    <text x="944" y="78" class="tiny lightSwapA" fill="#B6C2D0">signal: alive</text>
+    <text x="92" y="316" class="tiny lightSwapA" fill="#94A3B8">const imagination = physics + syntax + motion;</text>
+    <text x="886" y="316" class="tiny lightSwapA" fill="#94A3B8">return impossible.show();</text>
+  </g>
+
+  <!-- constellation network -->
+  <g fill="none" stroke="url(#lineGrad)" stroke-width="1.6" stroke-linecap="round">
+    <path class="dash lineLight" d="M126 194C176 172 202 148 247 121C312 81 345 82 404 110C467 139 520 177 592 184C677 192 743 120 812 102C890 81 947 100 994 151C1026 185 1078 210 1154 212"/>
+    <path class="dash lineLight" d="M140 234C193 241 252 220 312 186C377 149 415 147 488 176C544 199 598 233 667 241C747 250 803 233 852 198C916 154 975 141 1036 169C1088 193 1128 224 1173 251"/>
+    <path class="lineLight" stroke-opacity="0.42" d="M212 84L262 125L338 92L404 109L479 149L557 187L637 176L716 136L784 103L861 96L932 121L1008 169L1070 221"/>
+    <path class="lineLight" stroke-opacity="0.30" d="M201 264L276 224L349 194L435 201L512 229L601 248L690 237L761 208L831 179L914 175L995 202L1077 248"/>
+  </g>
+
+  <!-- nodes -->
+  <g filter="url(#smallGlow)">
+    <circle class="star s1" cx="126" cy="194" r="3.3" fill="#7DD3FC"/>
+    <circle class="star s2" cx="247" cy="121" r="2.9" fill="#A78BFA"/>
+    <circle class="star s3" cx="404" cy="110" r="3.8" fill="#67E8F9"/>
+    <circle class="star s4" cx="592" cy="184" r="3.2" fill="#C084FC"/>
+    <circle class="star s2" cx="812" cy="102" r="3.5" fill="#7DD3FC"/>
+    <circle class="star s1" cx="994" cy="151" r="4.0" fill="#A78BFA"/>
+    <circle class="star s3" cx="1154" cy="212" r="3.2" fill="#67E8F9"/>
+
+    <circle class="star s4" cx="140" cy="234" r="2.8" fill="#67E8F9"/>
+    <circle class="star s1" cx="312" cy="186" r="3.0" fill="#7DD3FC"/>
+    <circle class="star s2" cx="488" cy="176" r="3.7" fill="#C084FC"/>
+    <circle class="star s3" cx="667" cy="241" r="3.2" fill="#67E8F9"/>
+    <circle class="star s4" cx="852" cy="198" r="3.6" fill="#7DD3FC"/>
+    <circle class="star s1" cx="1036" cy="169" r="3.0" fill="#A78BFA"/>
+    <circle class="star s2" cx="1173" cy="251" r="3.4" fill="#67E8F9"/>
+  </g>
+
+  <!-- center signal core -->
+  <g filter="url(#softGlow)" class="floatA">
+    <circle cx="639" cy="178" r="36" fill="#7DD3FC" opacity="0.06"/>
+    <circle cx="639" cy="178" r="20" fill="#A78BFA" opacity="0.10"/>
+    <circle cx="639" cy="178" r="7" fill="#E2E8F0"/>
+    <circle cx="639" cy="178" r="26" stroke="#93C5FD" stroke-opacity="0.35" stroke-width="1.2" stroke-dasharray="5 7">
+      <animateTransform attributeName="transform" type="rotate" from="0 639 178" to="360 639 178" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="639" cy="178" r="44" stroke="#C084FC" stroke-opacity="0.18" stroke-width="1.1" stroke-dasharray="3 9">
+      <animateTransform attributeName="transform" type="rotate" from="360 639 178" to="0 639 178" dur="22s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- title -->
+  <g class="reveal">
+    <g clip-path="url(#wipe)">
+      <text x="288" y="160" class="label lightSwapA" fill="url(#textGrad)">CONSTELLATION</text>
+      <text x="288" y="214" class="label lightSwapA" fill="url(#textGrad)">COMPILER</text>
+    </g>
+    <text x="287" y="241" class="sub lightSwapA" fill="#A5B4FC" opacity="0.95">turning code, motion, and impossible ideas into signal<span class="blink">_</span></text>
+  </g>
+
+  <!-- side ornaments -->
+  <g opacity="0.55">
+    <path d="M1114 96H1170" stroke="#7DD3FC" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M1090 120H1170" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M1080 144H1170" stroke="#67E8F9" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="1057" cy="144" r="4" fill="#67E8F9"/>
+  </g>
+
+  <g opacity="0.6">
+    <path d="M110 98H166" stroke="#67E8F9" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M110 122H190" stroke="#A78BFA" stroke-width="2.2" stroke-linecap="round"/>
+    <path d="M110 146H176" stroke="#7DD3FC" stroke-width="2.2" stroke-linecap="round"/>
+    <circle cx="198" cy="122" r="4" fill="#A78BFA"/>
+  </g>
+
+  <!-- frame -->
+  <rect x="8" y="8" width="1264" height="344" rx="18" stroke="white" stroke-opacity="0.08"/>
+</svg>
