@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="./constellation.svg" alt="Constellation" width="100%" />
+  <img src="./test.svg" alt="Constellation" width="100%" />
 </p>
